@@ -126,7 +126,7 @@ if __name__ == "__main__":
                     # маппим значения свойств на их id. в каждой строке  бежим в цикле
                     elements_df[column] = elements_df[column]\
                                                 .apply(lambda row: [mapping_dict[v] for v in row if mapping_dict.get(v)])
-                    elements_df[column] = [','.join(map(str, l)) for l in elements_df[column]]
+                    
         return elements_df
 
 
